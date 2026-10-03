@@ -1,0 +1,135 @@
+body {
+    background-color: #f5f6fa;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.card {
+    border: none;
+}
+
+
+/* =========================
+   Expense Form
+   ========================= */
+
+#expenseForm .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#expenseForm .col-md-4,
+#expenseForm .col-md-3,
+#expenseForm .col-md-2 {
+    width: 100%;
+}
+
+
+/* =========================
+   Table
+   ========================= */
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+@media (max-width: 992px) {
+
+    #expenseForm .row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #expenseForm .row {
+        grid-template-columns: 1fr;
+    }
+
+    #expenseForm button {
+        width: 100%;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .table th,
+    .table td {
+        white-space: nowrap;
+    }
+}
+
+
+/* Summary Cards */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.summary-grid .card {
+    min-height: 120px;
+}
+
+.summary-grid h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.category-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.category-food {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.category-transport {
+    background-color: #cfe2ff;
+    color: #084298;
+}
+
+.category-bills {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.category-shopping {
+    background-color: #e2d9f3;
+    color: #59359a;
+}
+
+.category-other {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
